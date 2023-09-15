@@ -1,0 +1,60 @@
+ 
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  /* ADDED */
+  background-color: #181818; 
+}
+
+ 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* برای انیمیشن باز شدن */
+.expanded {
+  max-height: 1000px; /* یک مقدار کافی بزرگ برای نمایش محتوا */
+  /* transition: max-height 0.3s ease; */
+}
+
+/* برای انیمیشن بسته شدن */
+.collapsed {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+ 
+ 
+ /* commit */
+
+ @font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Gilroy-Medium.woff") format("woff")
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Gilroy-Regular.woff") format("woff")
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/Gilroy-Bold.woff") format("woff")
+}
+
+ 

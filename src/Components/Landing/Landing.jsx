@@ -5,11 +5,9 @@ import Products from "./Products/Products";
 const Landing = () => {
   return (
     <>
-      {/* <Container maxWidth="xl" sx={{ backgroundColor: "#181818" }}> */}
       <Slider />
       <Products />
       <About />
-      {/* </Container> */}
     </>
   );
 };

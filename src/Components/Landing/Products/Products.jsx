@@ -7,84 +7,107 @@ const products = [
   {
     id: 1,
     name: "Fortnite mobile New skin",
-    image: "/images/prod01.png",
+    image: "/images/amazon.png",
     stars: 4.2,
     category: "Gift card",
   },
   {
     id: 2,
     name: "Fortnite mobile New skin",
-    image: "/images/prod02.png",
+    image: "/images/Apple.png",
     stars: 3.1,
     category: "In app purchases",
   },
   {
     id: 3,
     name: "Fortnite mobile New skin",
-    image: "/images/prod03.png",
+    image: "/images/Blizzard.png",
     stars: 4.4,
     category: "Gift card",
   },
   {
     id: 4,
     name: "Fortnite mobile New skin",
-    image: "/images/prod04.png",
+    image: "/images/ebay.png",
     stars: 5,
     category: "Top up via id",
   },
-  {
-    id: 5,
-    name: "Fortnite mobile New skin",
-    image: "/images/prod01.png",
-    stars: 1.9,
-    category: "Payment service",
-  },
+
   {
     id: 6,
     name: "Fortnite mobile New skin",
-    image: "/images/prod02.png",
+    image: "/images/Gamestop.png",
     stars: 4,
     category: "Payment service",
   },
   {
     id: 7,
     name: "Fortnite mobile New skin",
-    image: "/images/prod03.png",
+    image: "/images/google.png",
     stars: 4,
     category: "Gift card",
   },
   {
     id: 8,
     name: "Fortnite mobile New skin",
-    image: "/images/prod04.png",
+    image: "/images/Netflix.png",
     stars: 4,
     category: "Game voucher",
   },
   {
     id: 9,
     name: "Fortnite mobile New skin",
-    image: "/images/prod03.png",
+    image: "/images/Nintendo.png",
     stars: 4,
     category: "Premium service",
   },
   {
     id: 10,
     name: "Fortnite mobile New skin",
-    image: "/images/prod02.png",
+    image: "/images/Playstation.png",
     stars: 4,
     category: "Game voucher",
   },
   {
     id: 11,
     name: "Fortnite mobile New skin",
-    image: "/images/prod04.png",
+    image: "/images/Razer.png",
     stars: 4,
     category: "Premium service",
   },
   {
     id: 12,
     name: "Fortnite mobile New skin",
-    image: "/images/prod01.png",
+    image: "/images/Spotify.png",
+    stars: 4,
+    category: "Premium service",
+  },
+  {
+    id: 13,
+    name: "Fortnite mobile New skin",
+    image: "/images/Steam.png",
+    stars: 4,
+    category: "Premium service",
+  },
+  {
+    id: 14,
+    name: "Fortnite mobile New skin",
+    image: "/images/Target.png",
+    stars: 4,
+    category: "Premium service",
+  },
+
+  {
+    id: 15,
+    name: "Fortnite mobile New skin",
+    image: "/images/VIsa Master.png",
+    stars: 4,
+    category: "Premium service",
+  },
+  {
+    id: 16,
+    name: "Fortnite mobile New skin",
+    image: "/images/Xbox.png",
     stars: 4,
     category: "Premium service",
   },
@@ -169,7 +192,9 @@ const Products = () => {
         </Grid> */}
       </Grid>
 
-      <Grid container spacing={2}>
+      <Grid container
+       spacing={2}
+       >
         {products
           .filter(
             (product) =>
@@ -184,7 +209,7 @@ const Products = () => {
                     component="img"
                     src={product.image}
                     alt={product.name}
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ width: "100%", height: "auto", borderRadius: '15px' }}
                     sx={{ mt: '20px'}}
                   />
                   <Typography

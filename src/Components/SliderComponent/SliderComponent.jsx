@@ -88,7 +88,9 @@ const SliderComponent = () => {
   }
 `;
   return (
-    <Grid container sx={{ mt: "15px" }} spacing={2}>
+    <Grid container sx={{ mt: "15px" }} 
+    spacing={2}
+    >
       <Grid item xs={12} md={8} sx={{ alignSelf: "center" }}>
         <Slider
           ref={sliderRef}
@@ -97,7 +99,7 @@ const SliderComponent = () => {
         >
           {props?.data?.map((x) => {
             return (
-              <Grid>
+              <Grid key={x}>
                 <Grid sx={{ position: "relative" }}>
                   <img
                     src={x.image}
@@ -208,6 +210,7 @@ const SliderComponent = () => {
           {props?.data?.map((x, index) => {
             return (
               <Button
+              key={index}
                 sx={{ display: "block", width: "100%" }}
                 variant="text"
                 onClick={() => sliderRef.current.slickGoTo(index)}
@@ -245,9 +248,9 @@ const SliderComponent = () => {
                           <path
                             d="M3.38379 8.00002H14.0355M14.0355 8.00002L10.0411 4.00562M14.0355 8.00002L10.0411 11.9944"
                             stroke="#2C7EFA"
-                            stroke-width="0.998602"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="0.998602"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
                         </svg>
                       </SvgIcon>

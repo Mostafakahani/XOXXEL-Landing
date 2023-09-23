@@ -20,6 +20,7 @@ const Slidert = () => {
             "/images/whatsapp.svg",
           ].map((x) => (
             <Box
+            key={x}
               component="img"
               src={x}
               sx={{

@@ -6,92 +6,92 @@ import { Rating } from "@mui/material";
 const products = [
   {
     id: 1,
-    name: "Fortnite mobile New skin",
+    name: "Amazon",
     image: "/images/amazon.png",
-    stars: 4.2,
+    stars: 75,
     category: "Gift card",
   },
   {
     id: 2,
-    name: "Fortnite mobile New skin",
+    name: "Apple",
     image: "/images/Apple.png",
-    stars: 3.1,
+    stars: 70,
     category: "In app purchases",
   },
   {
     id: 3,
-    name: "Fortnite mobile New skin",
+    name: "Blizard",
     image: "/images/Blizzard.png",
-    stars: 4.4,
+    stars: 82,
     category: "Gift card",
   },
   {
     id: 4,
-    name: "Fortnite mobile New skin",
+    name: "Ebay",
     image: "/images/ebay.png",
-    stars: 5,
+    stars: 76,
     category: "Top up via id",
   },
 
   {
     id: 6,
-    name: "Fortnite mobile New skin",
+    name: "Gamestop",
     image: "/images/Gamestop.png",
-    stars: 4,
+    stars: 78,
     category: "Payment service",
   },
   {
     id: 7,
-    name: "Fortnite mobile New skin",
+    name: "Google Play",
     image: "/images/google.png",
-    stars: 4,
+    stars: 73,
     category: "Gift card",
   },
   {
     id: 8,
-    name: "Fortnite mobile New skin",
+    name: "Netflix",
     image: "/images/Netflix.png",
-    stars: 4,
+    stars: 70,
     category: "Game voucher",
   },
   {
     id: 9,
-    name: "Fortnite mobile New skin",
+    name: "Nintendo",
     image: "/images/Nintendo.png",
-    stars: 4,
+    stars: 70,
     category: "Premium service",
   },
   {
     id: 10,
-    name: "Fortnite mobile New skin",
+    name: "Playstation",
     image: "/images/Playstation.png",
-    stars: 4,
+    stars: 70,
     category: "Game voucher",
   },
   {
     id: 11,
-    name: "Fortnite mobile New skin",
+    name: "Razer Gold",
     image: "/images/Razer.png",
     stars: 4,
     category: "Premium service",
   },
   {
     id: 12,
-    name: "Fortnite mobile New skin",
+    name: "Spotify",
     image: "/images/Spotify.png",
-    stars: 4,
+    stars: 85,
     category: "Premium service",
   },
   {
     id: 13,
-    name: "Fortnite mobile New skin",
+    name: "Steam",
     image: "/images/Steam.png",
-    stars: 4,
+    stars: 83,
     category: "Premium service",
   },
   {
     id: 14,
-    name: "Fortnite mobile New skin",
+    name: "Target",
     image: "/images/Target.png",
     stars: 4,
     category: "Premium service",
@@ -99,16 +99,16 @@ const products = [
 
   {
     id: 15,
-    name: "Fortnite mobile New skin",
+    name: "Visa / Master",
     image: "/images/VIsa Master.png",
-    stars: 4,
+    stars: 73,
     category: "Premium service",
   },
   {
     id: 16,
-    name: "Fortnite mobile New skin",
+    name: "Xbox",
     image: "/images/Xbox.png",
-    stars: 4,
+    stars: 70,
     category: "Premium service",
   },
 ];
@@ -230,10 +230,10 @@ const Products = () => {
                       variant="body2"
                       sx={{ mr: "10px", fontSize: {md: '13px',sm: '15px', xs: "25px"}, fontWeight: "900", color: '#F5F5F6' }}
                     >
-                      {product.stars}/5
+                      {product.stars}{" "}%
                     </Typography>
-                    <Rating name="rating" value={product.stars} size="small" max={5}
-                      readOnly />
+                    {/* <Rating name="rating" value={product.stars} size="small" max={5}
+                      readOnly /> */}
                   </Grid>
                 </Box>
               </Link>

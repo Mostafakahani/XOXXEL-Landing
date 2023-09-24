@@ -29,7 +29,7 @@ const BaseTheme = (props) => {
         textAndIconSelected: "#362FD9",
         BackgroundChildMenu: "#131416",
         BoxParentBg: "#1D2024",
-        BackgroundSelectBox: "#F5F5F5",
+        BackgroundSelectBox: "#181818",
         hrColor: "#E1E1E1",
         iconFieldInputText: "#12131A",
         ColorRedIcon: "#E04D1F",
@@ -47,12 +47,12 @@ const BaseTheme = (props) => {
         textAndIconSelected: "#362FD9",
         BackgroundChildMenu: "#f6f6f6",
         BoxParentBg: "#fff",
-        BackgroundSelectBox: "#F5F5F5",
+        BackgroundSelectBox: "#181818",
         hrColor: "#E1E1E1",
         iconFieldInputText: "#12131A",
         ColorRedIcon: "#E04D1F",
       },
-      MainBackground: "#F5F5F5",
+      MainBackground: "#181818",
     },
   };
 
